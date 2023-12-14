@@ -90,7 +90,7 @@ DEFAULT_AUTO_FIELD = "django.db.models.AutoField"
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
-LANGUAGE_CODE = env.str("LANGUAGE_CODE", "de-de")
+LANGUAGE_CODE = "de-de"
 
 TIME_ZONE = env.str("TIME_ZONE", "Europe/Berlin")
 
@@ -164,7 +164,7 @@ if SOCIALACCOUNT_USE_TWITTER:
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = "/static/"
-STATIC_ROOT = env.str("STATIC_ROOT", os.path.join(BASE_DIR, "static/"))
+STATIC_ROOT = env.str("STATIC_ROOT", os.path.join(BASE_DIR, "staticfiles/"))
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "mainapp/assets"),
